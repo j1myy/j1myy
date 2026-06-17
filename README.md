@@ -19,7 +19,7 @@
   <tr>
     <td align="center" valign="top"><strong>Focus</strong><br/><sub>Mobile &amp; backend</sub></td>
     <td align="center" valign="top"><strong>Tools</strong><br/><sub>Swift · Kotlin · Python</sub></td>
-    <td align="center" valign="top"><strong>Now</strong><br/><sub>Studying CS, building on the side</sub></td>
+    <td align="center" valign="top"><strong>Now</strong><br/><sub>Studying ITWMA, building on the side</sub></td>
   </tr>
 </table>
 
