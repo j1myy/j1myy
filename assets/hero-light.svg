@@ -48,8 +48,6 @@
     </g>
   </defs>
 
-  <!-- backdrop -->
-  <use xlink:href="#wallpaper"/>
   <!-- float shadow -->
   <rect x="64" y="56" width="1152" height="428" rx="40" fill="#FFFFFF" filter="url(#shadow)"/>
   <!-- frosted refraction of the backdrop -->

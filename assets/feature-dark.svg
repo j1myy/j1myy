@@ -38,7 +38,6 @@
     </g>
   </defs>
 
-  <use xlink:href="#wallpaper"/>
   <rect x="64" y="30" width="1152" height="240" rx="36" fill="#000000" filter="url(#shadow)"/>
   <use xlink:href="#wallpaper" filter="url(#frost)" clip-path="url(#panelClip)"/>
   <rect x="64" y="30" width="1152" height="240" rx="36" fill="#0A0A0C" fill-opacity="0.34"/>
