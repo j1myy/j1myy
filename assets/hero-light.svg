@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 540" width="1280" height="540" role="img" aria-label="Jimwel Mañibo — information technology student, building for iOS">
+  <defs>
+    <style>.ff{font-family:-apple-system,"SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;}</style>
+
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F4F6"/>
+      <stop offset="0.55" stop-color="#E8E8EC"/>
+      <stop offset="1" stop-color="#F1F1F4"/>
+    </linearGradient>
+    <radialGradient id="softW" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="softC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#D7E3F4" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#D7E3F4" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="frost" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="22"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="34" flood-color="#5A5A66" flood-opacity="0.30"/>
+    </filter>
+
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="panelClip"><rect x="64" y="56" width="1152" height="428" rx="40"/></clipPath>
+
+    <g id="wallpaper">
+      <rect width="1280" height="540" fill="url(#wall)"/>
+      <ellipse cx="300" cy="120" rx="380" ry="250" fill="url(#softW)"/>
+      <ellipse cx="1010" cy="470" rx="440" ry="280" fill="url(#softC)"/>
+      <ellipse cx="800" cy="80" rx="320" ry="210" fill="url(#softW)"/>
+    </g>
+  </defs>
+
+  <!-- backdrop -->
+  <use xlink:href="#wallpaper"/>
+  <!-- float shadow -->
+  <rect x="64" y="56" width="1152" height="428" rx="40" fill="#FFFFFF" filter="url(#shadow)"/>
+  <!-- frosted refraction of the backdrop -->
+  <use xlink:href="#wallpaper" filter="url(#frost)" clip-path="url(#panelClip)"/>
+  <!-- milky glass fill -->
+  <rect x="64" y="56" width="1152" height="428" rx="40" fill="#FFFFFF" fill-opacity="0.50"/>
+  <!-- top sheen -->
+  <!-- liquid light sweep -->
+  <g clip-path="url(#panelClip)">
+    <rect x="-360" y="56" width="300" height="428" fill="url(#sweep)" opacity="0.55">
+      <animateTransform attributeName="transform" type="translate" values="0 0;1640 0;1640 0" keyTimes="0;0.6;1" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1"/>
+    </rect>
+  </g>
+  <!-- specular rim -->
+  <rect x="64" y="56" width="1152" height="428" rx="40" fill="none" stroke="url(#rim)" stroke-width="1.4"/>
+
+  <!-- content -->
+  <g opacity="0" transform="translate(0,12)">
+    <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.10s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" dur="0.9s" begin="0.10s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <text class="ff" x="640" y="150" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="3.2" fill="#8A8A8E">iOS&#160;&#160;·&#160;&#160;ANDROID&#160;&#160;·&#160;&#160;WEB</text>
+  </g>
+  <g opacity="0" transform="translate(0,12)">
+    <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.20s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" dur="0.9s" begin="0.20s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <text class="ff" x="640" y="240" text-anchor="middle" font-size="74" font-weight="600" letter-spacing="-2" fill="#1D1D1F">Jimwel Mañibo</text>
+  </g>
+  <g opacity="0" transform="translate(0,12)">
+    <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <text class="ff" x="640" y="296" text-anchor="middle" font-size="21" font-weight="400" fill="#5E5E63">Information technology student. Building for iOS — and the systems behind it.</text>
+  </g>
+  <g opacity="0" transform="translate(0,12)">
+    <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.42s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" dur="0.9s" begin="0.42s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <text class="ff" x="640" y="348" text-anchor="middle" font-size="17" font-weight="400" fill="#86868B">Building a life I don&#8217;t need to escape from.</text>
+  </g>
+
+  <!-- glass stack pills -->
+  <g opacity="0" transform="translate(0,12)">
+    <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.54s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" dur="0.9s" begin="0.54s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/>
+    <g class="ff" font-size="15" font-weight="500" fill="#1D1D1F" text-anchor="middle">
+      <rect x="386" y="406" width="72" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.62" stroke="#1D1D1F" stroke-opacity="0.08"/>
+      <text x="422" y="431">Swift</text>
+      <rect x="474" y="406" width="76" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.62" stroke="#1D1D1F" stroke-opacity="0.08"/>
+      <text x="512" y="431">Kotlin</text>
+      <rect x="566" y="406" width="82" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.62" stroke="#1D1D1F" stroke-opacity="0.08"/>
+      <text x="607" y="431">Python</text>
+      <rect x="664" y="406" width="108" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.62" stroke="#1D1D1F" stroke-opacity="0.08"/>
+      <text x="718" y="431">TypeScript</text>
+      <rect x="788" y="406" width="106" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.62" stroke="#1D1D1F" stroke-opacity="0.08"/>
+      <text x="841" y="431">JavaScript</text>
+    </g>
+  </g>
+</svg>
